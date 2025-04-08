@@ -189,6 +189,7 @@ class _ChatscreenState extends State<Chatscreen> {
               child: ListView.builder(
                   itemCount: name.length,
                   itemBuilder: (context, index) {
+                    int isCheck=index%3;
                     return Column(
                       children: [
                         ListTile(
@@ -207,10 +208,10 @@ class _ChatscreenState extends State<Chatscreen> {
                           title: Text(name[index].title.toString()),
                           subtitle: Text(name[index].subtitle.toString()),
                           trailing: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
                               Text(name[index].trailing1.toString()),
-                              Spacer(),
-                              CircleAvatar(
+                             isCheck==0? CircleAvatar(
                                 backgroundColor: Colors.green,
                                 radius: 11,
                                 child: Text(
@@ -218,7 +219,7 @@ class _ChatscreenState extends State<Chatscreen> {
                                   style: TextStyle(
                                       fontSize: 12, color: Colors.white),
                                 ),
-                              )
+                              ):SizedBox()
                             ],
                           ),
                         ),
