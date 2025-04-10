@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:wp2ui/callsscreen.dart';
-import 'package:wp2ui/chatscreen.dart';
-import 'package:wp2ui/communityscreen.dart';
-import 'package:wp2ui/updatsscreen.dart';
+import 'package:wp2ui/screens/homescreens/callsscreen/callsscreen.dart';
+import 'package:wp2ui/screens/homescreens/chatscreen/chatscreen.dart';
+import 'package:wp2ui/screens/homescreens/communityscreen/communityscreen.dart';
+import 'package:wp2ui/screens/homescreens/updatesscreen/updatsscreen.dart';
 
 class Whatsappuiscreen extends StatefulWidget {
   const Whatsappuiscreen({super.key});
